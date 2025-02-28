@@ -1,0 +1,7 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+<h2>Welcome, @Context.Session.GetString("Username")</h2>
+<p>Role: @Context.Session.GetString("Role")</p>
+
+<a href="@Url.Action("Logout", "Account")">Logout</a>
